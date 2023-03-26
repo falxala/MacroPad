@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+}
+
+.typedKey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.keybord-wrapper {
+  min-width: 700px;
+  max-width: 730px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #bec4d4;
+  margin: 0 auto;
+}
+
+.keybord-wrapper .keys {
+  display: flex;
+}
+
+#first {
+  display: inline-flex;
+  margin-left: 10px;
+}
+
+#second {
+  display: inline-flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#Pad {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+#NumPad {
+  margin-left: 10px;
+  min-width: 200px;
+  max-width: 200px;
+  height: 100%;
+}
+
+#Pad .keys {
+  justify-content: center;
+}
+
+#NumPad .keys {
+  justify-content: left;
+}
+
+#NumPad .keys label span {
+  font-size: 0.7rem;
+}
+
+#Pad .keys label span {
+  font-size: 0.7rem;
+  margin: 4px;
+  width: 50px;
+  font-weight: bold;
+}
+
+#separator {
+  height: 0.5rem;
+}
+
+.keybord-wrapper .keys label input {
+  display: none;
+}
+
+.keybord-wrapper .keys label span {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 30px;
+  width: 40px;
+  padding: 3px;
+  border: none;
+  outline: none;
+  background: #2e3237;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+    -3px -3px 7px rgba(255, 255, 255, 0.05);
+  margin: 4px;
+  color: rgb(184, 184, 184);
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: default;
+  font-weight: bold;
+}
+
+.keybord-wrapper .keys label input:checked+span {
+  color: #ff602b;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 7px rgba(255, 255, 255, 0.05);
+}
+
+
+.keybord-wrapper .keys label span[value=SPACE] {
+  width: 10rem;
+}
+
+.keybord-wrapper .keys label span[value="Shift"] {
+  width: 5.5rem;
+}
+
+.keybord-wrapper .keys label span[value="Tab"] {
+  width: 3rem;
+}
+
+.keybord-wrapper .keys label span[value="Back"] {
+  font-size: 14px;
+}
+
+.keybord-wrapper .keys label span[value="Caps"] {
+  width: 4.5rem;
+}
+
+.keybord-wrapper .keys label span[value="Enter"] {
+  width: 5rem;
+}
+
+.keybord-wrapper .keys label span[value="半角/"] {
+  font-size: 12px;
+}
+
+.keybord-wrapper .keys label span[value="GUI"] {
+  font-size: 15px;
+  width: 3rem;
+}
+
+.keybord-wrapper .keys label span[value="Alt/Opt"] {
+  font-size: 12px;
+  width: 4rem;
+}
+
+.keybord-wrapper .keys label span[value="無変換"] {
+  font-size: 12px;
+  width: 4rem;
+}
+
+.keybord-wrapper .keys label span[value="変換"] {
+  font-size: 12px;
+  width: 3rem;
+}
+
+.keybord-wrapper .keys label span[value="ローマ字"] {
+  font-size: 10px;
+  width: 3rem;
+}
+
+.keybord-wrapper .keys label span[value="Menu"] {
+  font-size: 13px;
+  width: 3rem;
+}
+
+.keybord-wrapper .keys label span[value="Ctrl"] {
+  font-size: 15px;
+  width: 3rem;
+}
+
+.keybord-wrapper .keys label span[id="fkeys"] {
+  font-size: 12px;
+  width: 2.71rem;
+}
+
+@media (max-width: 480px) {
+  .keybord-wrapper {
+    padding: 6px;
+  }
+
+  .keybord-wrapper .keys input {
+    width: 30px;
+    margin: 3px;
+  }
+}
